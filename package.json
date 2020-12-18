@@ -4,7 +4,6 @@
   "description": "A library that helps you Localizate your app!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index"
   },
   "keywords": [
@@ -16,5 +15,8 @@
   ],
   "author": "ragokan",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "repository": {
+    "url": "https://github.com/ragokan/lokaly.git"
+  }
 }
