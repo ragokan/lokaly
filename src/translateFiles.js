@@ -1,11 +1,12 @@
-const fs = require("fs");
-const path = require("path");
+import fs from "fs";
+import path from "path";
 let translateFiles;
 
 if (typeof window === "undefined") {
   translateFiles = JSON.parse(fs.readFileSync(path.resolve("lokaly.json")));
 } else {
-  translateFiles = require("../../../lokaly.json");
+  const data = require("../../../lokaly.json");
+  translateFiles = data;
 }
 
-module.exports = translateFiles;
+export default translateFiles;

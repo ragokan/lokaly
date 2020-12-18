@@ -1,5 +1,5 @@
-const { currentLanguage } = require("./language.js");
-const translateFiles = require("./translateFiles.js");
+import { currentLanguage } from "./language.js";
+import translateFiles from "./translateFiles.js";
 
 const translateConverter = (toTranslate, currentLanguage) => {
   try {
@@ -10,4 +10,4 @@ const translateConverter = (toTranslate, currentLanguage) => {
 };
 let Localization = (translateKey) => translateConverter(translateFiles[translateKey], currentLanguage);
 
-module.exports = Localization;
+export default Localization;
