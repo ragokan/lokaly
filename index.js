@@ -1,5 +1,4 @@
-import lokaly from "./src/localization.js";
-import { currentLanguage, setLanguage } from "./src/language.js";
+const lokaly = require("./src/localization.js");
+const { currentLanguage, setLanguage } = require("./src/language.js");
 
-export { currentLanguage, setLanguage };
-export default lokaly;
+module.exports = lokaly, { currentLanguage, setLanguage };

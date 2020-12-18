@@ -1,4 +1,4 @@
 let currentLanguage = "en";
 const setLanguage = (language) => (currentLanguage = language);
 
-export { currentLanguage, setLanguage };
+module.exports = { currentLanguage, setLanguage };
