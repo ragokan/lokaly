@@ -1,5 +1,7 @@
 # Lokaly
 
+## The easiest package to use localization in your app!
+
 ## How to use
 
 ### Create lokaly.json file in your main folder, then create sentences/words to translate just like the below example
@@ -13,6 +15,10 @@
   "sonuc": {
     "en": "Your result",
     "tr": "Sonucunuz"
+  },
+  "working": {
+    "en": "Lokaly is working!",
+    "tr": "Lokaly çalışıyor!"
   }
 }
 ```

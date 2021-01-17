@@ -1,10 +1,6 @@
 {
-  "enter": {
-    "en": "Welcome",
-    "tr": "Hoşgeldin"
-  },
-  "sonuc": {
-    "en": "Your result",
-    "tr": "Sonucunuz"
+  "working": {
+    "en": "Lokaly is working!",
+    "tr": "Lokaly çalışıyor!"
   }
 }
