@@ -2,6 +2,29 @@ import { currentLanguage } from "./language.js";
 import translateFiles from "./translateFiles.js";
 import translateConverter from "./translateConverter.js";
 
+let data = Object.assign({}, translateFiles);
+
+/**
+ *
+ * @param {Object} object - The object that you want to add to lokaly.json or replace.
+ * @function
+ * @example
+ * // Object :
+ * // const translateObject = {"working": {"en": "Lokaly is working!","tr": "Lokaly çalışıyor!"}};
+ * // ----------------------------
+ * addMoreFile(translateObject);
+ * // ----------------------------
+ * console.log(lokaly("working"));
+ * // Output : Lokaly is Working.
+ */
+export function addMoreFile(object) {
+  try {
+    data = { ...translateFiles, ...object };
+  } catch (_) {
+    console.log("The file you added is not working!");
+  }
+}
+
 /**
  *
  * @param {String} translateKey - Translate key is the key you declared in lokaly.json
@@ -15,6 +38,6 @@ import translateConverter from "./translateConverter.js";
  * // Output : Lokaly is Working.
  */
 let Localization = (translateKey) =>
-  translateConverter(translateFiles[translateKey], currentLanguage);
+  translateConverter(data[translateKey], currentLanguage);
 
 export default Localization;

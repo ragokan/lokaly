@@ -1,7 +1,6 @@
-import lokaly from "./src/localization.js";
+import { translateFiles } from "./src/translateFiles.js";
 import { currentLanguage, setLanguage } from "./src/language.js";
+import lokaly, { addMoreFile } from "./src/localization.js";
 
-console.log(lokaly("working"));
-
-export { currentLanguage, setLanguage };
+export { currentLanguage, setLanguage, translateFiles, addMoreFile };
 export default lokaly;

@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-let translateFiles;
+export let translateFiles;
 
 try {
   if (typeof window === "undefined") {
