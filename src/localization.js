@@ -1,13 +1,7 @@
 import { currentLanguage } from "./language.js";
 import translateFiles from "./translateFiles.js";
+import translateConverter from "./translateConverter.js";
 
-const translateConverter = (toTranslate, currentLanguage) => {
-  try {
-    return toTranslate[currentLanguage];
-  } catch (error) {
-    return "To Translate or language is not found!";
-  }
-};
 /**
  *
  * @param {String} translateKey - Translate key is the key you declared in lokaly.json
